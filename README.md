@@ -12,17 +12,21 @@ npm install bouzraa-files-crypter
 ## Usage
 
 ``` bash
-const { encryptFile, decryptFile } = require('bouzraa-files-crypter');
+import { BouzraaFilesCrypter } from 'bouzraa-files-crypter';
 
-const inputFile = './hello.js';
-const encryptedFile = 'encrypted_file.enc';
-const decryptedFile = 'decrypted_file.js';
+// Initialize with your encryption key
+const encryptionKey = 'your-32-byte-encryption-key-here';
+const creapter = new BouzraaFilesCreapter(encryptionKey);
 
-// Encrypt file
-encryptFile(inputFile, encryptedFile);
-
-// Decrypt file
-decryptFile(encryptedFile, decryptedFile);
+// Decrypt a file
+try {
+  const inputPath = '/path/to/encrypted/file.enc';
+  const outputPath = '/path/to/decrypted/file.txt';
+  creapter.decryptFile(inputPath, outputPath);
+  console.log('File decrypted successfully');
+} catch (error) {
+  console.error('Error decrypting file:', error);
+}
 
 ```
 ## License`
