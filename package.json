@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "Mohamed Bouzraa",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^22.5.0",
     "typescript": "^5.5.4"
