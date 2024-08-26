@@ -16,7 +16,7 @@ import { BouzraaFilesCrypter } from 'bouzraa-files-crypter';
 
 // Initialize with your encryption key
 const encryptionKey = 'your-32-byte-encryption-key-here';
-const creapter = new BouzraaFilesCreapter(encryptionKey);
+const creapter = new BouzraaFilesCrypter(encryptionKey);
 
 // Decrypt a file
 try {
