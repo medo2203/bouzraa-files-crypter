@@ -2,8 +2,9 @@
   "name": "bouzraa-files-crypter",
   "version": "2.0.0",
   "description": "bouzraa-files-crypter is a Node.js package that provides functions for encrypting and decrypting files using cryptographic algorithms. It simplifies the process of securing sensitive files on disk.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
