@@ -61,15 +61,24 @@ BouzraaFilesCrypter
 constructor(encryptionKey: string, algorithm?: string)
 ```
 
-encryptionKey: A hexadecimal string used for encryption and decryption.
-algorithm (optional): The algorithm to use for encryption. Default is aes-256-ctr.
+**encryptionKey**: A hexadecimal string used for encryption and decryption.
+
+**algorithm (optional)**: The algorithm to use for encryption. Default is aes-256-ctr.
 
 **Methods**
-encryptFile(inputFilePath: string, outputFilePath: string): void
 
+```bash
+
+encryptFile(inputFilePath: string, outputFilePath: string): string
+
+```
 Encrypts the file at inputFilePath and writes the encrypted content to outputFilePath.
 
+```bash
+
 decryptFile(inputFilePath: string, outputFilePath: string): string
+
+```
 
 Decrypts the file at inputFilePath and writes the decrypted content to outputFilePath. Returns the output file path.
 
@@ -77,12 +86,13 @@ Decrypts the file at inputFilePath and writes the decrypted content to outputFil
 
 The following algorithms are supported:
 
-aes-256-ctr (default)
-aes-192-ctr
-aes-128-ctr
-aes-256-cbc
-aes-192-cbc
-aes-128-cbc
+- aes-256-ctr (default)
+- aes-192-ctr
+- aes-128-ctr
+- aes-256-cbc
+- aes-192-cbc
+- aes-128-cbc
+
 Ensure that your encryption key length matches the requirements for the selected algorithm.
 
 ## Contributing
@@ -93,7 +103,7 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 
 This package is licensed under the MIT License. See the LICENSE file for details.
 
-For more detailed documentation and updates, visit the GitHub repository.
+For more detailed documentation and updates, visit the <a href="https://github.com/medo2203/bouzraa-files-crypter">GitHub repository</a>.
 
 ### Key Points:
 
