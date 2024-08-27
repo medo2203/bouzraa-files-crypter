@@ -20,10 +20,13 @@ To install **Bouzraa Files Crypter**, use npm:
 
 ```bash
 npm install bouzraa-files-crypter
-Usage
-Encrypting a File
-javascript
-Copy code
+```
+
+## Usage
+
+**Encrypting a File**
+
+```bash
 const { BouzraaFilesCrypter } = require('bouzraa-files-crypter');
 
 const encryptionKey = 'your-encryption-key-in-hex';
@@ -33,9 +36,11 @@ const inputPath = 'path/to/your/input/file.txt';
 const outputPath = 'path/to/your/encrypted/file.enc';
 
 crypter.encryptFile(inputPath, outputPath);
-Decrypting a File
-javascript
-Copy code
+```
+
+**Decrypting a File**
+
+```bash
 const { BouzraaFilesCrypter } = require('bouzraa-files-crypter');
 
 const encryptionKey = 'your-encryption-key-in-hex';
@@ -45,15 +50,21 @@ const inputPath = 'path/to/your/encrypted/file.enc';
 const outputPath = 'path/to/your/decrypted/file.txt';
 
 crypter.decryptFile(inputPath, outputPath);
-API
+```
+
+## API
+
 BouzraaFilesCrypter
-Constructor
-typescript
-Copy code
+**Constructor**
+
+```bash
 constructor(encryptionKey: string, algorithm?: string)
+```
+
 encryptionKey: A hexadecimal string used for encryption and decryption.
 algorithm (optional): The algorithm to use for encryption. Default is aes-256-ctr.
-Methods
+
+**Methods**
 encryptFile(inputFilePath: string, outputFilePath: string): void
 
 Encrypts the file at inputFilePath and writes the encrypted content to outputFilePath.
@@ -62,7 +73,8 @@ decryptFile(inputFilePath: string, outputFilePath: string): string
 
 Decrypts the file at inputFilePath and writes the decrypted content to outputFilePath. Returns the output file path.
 
-Supported Algorithms
+## Supported Algorithms
+
 The following algorithms are supported:
 
 aes-256-ctr (default)
@@ -73,16 +85,15 @@ aes-192-cbc
 aes-128-cbc
 Ensure that your encryption key length matches the requirements for the selected algorithm.
 
-Contributing
+## Contributing
+
 Contributions are welcome! Please fork the repository and submit a pull request. Make sure to follow the code style and include tests for new features or bug fixes.
 
-License
+## License
+
 This package is licensed under the MIT License. See the LICENSE file for details.
 
 For more detailed documentation and updates, visit the GitHub repository.
-
-markdown
-Copy code
 
 ### Key Points:
 
@@ -92,13 +103,3 @@ Copy code
 - **Supported Algorithms**: Lists the algorithms that can be used.
 - **Contributing**: Encourages contributions and provides basic guidelines.
 - **License**: Specifies the license under which the package is distributed.
-
-Replace placeholders like `your-encryption-key-in-hex`, `path/to/your/input/file.txt`, `path/to/your/encrypted/file.enc`, and `https://github.com/your-username/bouzraa-files-crypter` with actual values relevant to your package and project.
-
-
-
-
-
-
-
-```
