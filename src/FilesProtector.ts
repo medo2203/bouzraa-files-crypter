@@ -1,12 +1,12 @@
 import * as fs from "fs";
 import * as crypto from "crypto";
 
-export class BouzraaFilesCrypter {
+export class FilesProtector {
   private key: Buffer;
   private algorithm: string;
 
   /**
-   * Creates an instance of BouzraaFilesCrypter.
+   * Creates an instance of FilesProtector.
    * @param encryptionKey - The encryption key in hexadecimal format.
    * @param algorithm - The algorithm to use for encryption (default is "aes-256-ctr").
    */

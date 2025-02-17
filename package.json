@@ -1,9 +1,9 @@
 {
-  "name": "bouzraa-files-crypter",
-  "version": "1.0.7",
+  "name": "@bouzraa/files-protector",
+  "version": "1.0.8",
   "description": "A package for encrypting and decrypting files using various algorithms.",
-  "main": "dist/BouzraaFilesCrypter.js",
-  "types": "dist/BouzraaFilesCrypter.d.ts",
+  "main": "dist/FilesProtector.js",
+  "types": "dist/FilesProtector.d.ts",
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build"
@@ -18,11 +18,15 @@
   "author": "Mohamed Bouzraa",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^29.5.14",
     "@types/node": "^22.5.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "@types/crypto-js": "^4.2.2",
-    "crypto-js": "^4.2.0"
+    "@bouzraa/files-protector": "file:",
+    "@types/crypto-js": "^4.2.2"
   }
 }

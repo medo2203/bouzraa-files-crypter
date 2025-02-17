@@ -1,1 +1,1 @@
-export { BouzraaFilesCrypter } from "./BouzraaFilesCrypter";
+export { FilesProtector } from "./FilesProtector";
