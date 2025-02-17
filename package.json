@@ -26,7 +26,6 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "@bouzraa/files-protector": "file:",
     "@types/crypto-js": "^4.2.2"
   }
 }
