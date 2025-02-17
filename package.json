@@ -1,6 +1,6 @@
 {
   "name": "@bouzraa/files-protector",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A package for encrypting and decrypting files using various algorithms.",
   "main": "dist/FilesProtector.js",
   "types": "dist/FilesProtector.d.ts",
